@@ -1,15 +1,20 @@
+<% if user_signed_in? %>
+		<h1>You are logged in!</h1>
 
-<div class="hero-unit">
-		<h1>Welcome to Lift To Airport</h1>
-		<p>
-			You are just about to make this planet green and enjoy ride with a new friend @ 
-			<%= link_to "Lift to Airport","http://google.com" %>
-			
-		</p>
-		<p>
-		    <%= link_to "Sign Up Now!","#",class: "btn btn-primary btn-large" %>
-			
-		</p>
-</div>
+<% else %>
+		<div class="hero-unit">
+				<h1>Welcome to Lift To Airport</h1>
+				<p>
+					You are just about to make this planet green and enjoy ride with a new friend @ 
+					<%= link_to "Lift to Airport","http://google.com" %>
+					
+				</p>
+				<p>
+				    <%= link_to "Sign Up Now!", new_user_registration_path,class: "btn btn-primary btn-large" %>
+
+					
+				</p>
+		</div>
+<% end %>
 
 
