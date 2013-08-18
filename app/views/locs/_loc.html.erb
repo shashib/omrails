@@ -1,0 +1,8 @@
+<tr>
+		<td><%= loc.description %></td>
+		<td><%= link_to 'Show', loc %></td>
+		<% if current_user == loc.user %>
+			<td><%= link_to 'Edit', edit_loc_path(loc) %></td>
+			<td><%= link_to 'Destroy', loc, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+			<% end %>
+</tr>

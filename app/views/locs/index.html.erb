@@ -1,0 +1,20 @@
+<h1>Listing locs</h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><h4>Lift Requests</h4></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+        <%= render @locs %>
+  </tbody>
+
+</table>
+
+<br />
+
+<%= link_to 'New Loc', new_loc_path %>

@@ -1,0 +1,20 @@
+
+<div class="row">
+	<div class="span6 offset0">
+		<div class="well">
+			<p>
+			  <%= @loc.description %>
+			 </p>
+			 <p>
+  			   <%= @loc.user.name %>
+			</p>
+			 <p>
+			  <%= link_to 'Edit', edit_loc_path(@loc) %> |
+			  <%= link_to 'Back', locs_path %>
+			</p>
+		</div>
+	</div>
+</div>
+
+
+
